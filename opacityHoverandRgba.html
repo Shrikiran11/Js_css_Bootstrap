@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background: rgb(76, 175, 80);
+  padding: 10px;
+}
+
+div.rgb1 {
+  background: rgba(76, 175, 80, 0.1);
+}
+
+div.rgb2{
+  background: rgba(76, 175, 80, 0.3);
+}
+
+div.rgb3 {
+  background: rgba(76, 175, 80, 0.6);
+}
+div.first:hover{
+  opacity: 0.2;
+}
+
+div.second:hover{
+  opacity: 0.3;
+}
+
+div.third:hover{
+  opacity: 0.6;
+}
+</style>
+</head>
+<body>
+
+<h1>Transparent Box</h1>
+<p>When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+<p>opacity and hover used here</p>
+<div class="first"><p>opacity 0.1</p></div>
+<div class="second"><p>opacity 0.3</p></div>
+<div class="third"><p>opacity 0.6</p></div>
+<div><p>opacity 1 (default)</p></div>
+<p>without RGBA color values.Text also fades<p>
+<div style="opacity:0.1;"><p>10% opacity</p></div>
+<div style="opacity:0.3;"><p>30% opacity </p></div>
+<div style="opacity:0.6;"><p>60% opacity</p></div>
+<div><p>default</p></div>
+<p>With RGBA color values:</p>
+<div class="rgb1"><p>10% opacity</p></div>
+<div class="rgb2"><p>30% opacity</p></div>
+<div class="rgb3"><p>60% opacity</p></div>
+<div><p>default</p></div>
+</body>
+</html>
