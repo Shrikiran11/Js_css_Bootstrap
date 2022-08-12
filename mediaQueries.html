@@ -1,0 +1,41 @@
+<html>
+<head>
+<style>
+div {
+  background-color: tan;
+  color: black;
+}
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+  button{
+  float:right;
+  }
+  div {
+    background-color: blue;
+    color: white;
+  }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+button{
+  float:right;
+  }
+  div {
+    background-color: olive;
+    color: white;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Resize the browser window to see the effect!</h1>
+
+<div>See the change
+<button>window</button>
+</div>
+
+</body>
+</html>
