@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>localstorage</h1>
+<h3>localStorage.setItem()and localStorage.getItem()</h3>
+<form>
+<input id="i1" type="text" placeholder="name">
+</form>
+<button onclick="savedata()" type="button">Save/button</button>
+<p>Saved name is:</p>
+<p id="demo"></p>
+
+<script>
+// Set Item
+function savedata(){
+let val=document.getElementById("i1").value
+localStorage.setItem("lastname", val);
+// Retrieve
+document.getElementById("demo").innerHTML = localStorage.getItem("lastname");
+}
+</script>
+
+</body>
+</html>
