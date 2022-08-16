@@ -1,0 +1,61 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  .ul1 {
+    background-color: skyblue;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 3px;
+  }
+  .form-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+  }
+  .form-row > label {
+    padding: .5em 1em .5em 0;
+    flex: 1;
+  }
+  .form-row > input {
+    flex: 2;
+  }
+  .form-row > input,
+  .form-row > button {
+    padding: .5em;
+  }
+  .form-row > button {
+   background: gray;
+   color: white;
+   border: 0;
+  }
+</style>
+<body>
+<form>
+  <ul class="ul1">
+    <li class="form-row">
+      <label for="name">Name</label>
+      <input type="text" id="name">
+    </li>
+    <li class="form-row">
+      <label for="tech">Course and Technology</label>
+      <input type="text" id="tech">
+    </li>
+    <li class="form-row">
+      <label for="email">Email Address</label>
+      <input type="email" id="email">
+    </li>
+    <li class="form-row">
+      <button type="submit"onclick="myfun()">Submit</utton>
+    </li>
+  </ul>
+</form>
+<p id="p1">hello</p>
+<script>
+let a=document.getElementById("name").value;
+let b=document.getElementById("tech").value;
+let a=document.getElementById("email").value;
+function myfun(){
+document.getElementById("p1").innerHTML='${a} in ${b}:${c}'
+}
+</script>
+</body>
