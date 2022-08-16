@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.sticky {
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: lightgreen;
+  border: 2px solid blue;
+}
+div.fixed {
+  position: fixed;
+  top: 30;
+  right: 40;
+  width: 300px;
+  border: 3px solid black;
+}
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 80px;
+  height: 120px;
+  border: 3px solid #73AD21;
+}
+div.relative {
+  position: relative;
+  left:120px;
+  width: 150px;
+  height: 250px;
+  border: 3px solid #73AD21;
+} 
+
+</style>
+</head>
+<body>
+
+<p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+
+<div class="sticky">I am sticky!</div>
+
+<div style="padding-bottom:2000px">
+  
+ <div class="fixed"> <p>Scroll back up to remove the stickyness.</p></div>
+ <div class="relative">This div element has position: relative;
+  <div class="absolute">This div element has position: absolute;</div>
+  
+</div>
+
+</body>
+</html>
